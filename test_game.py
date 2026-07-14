@@ -54,7 +54,7 @@ def test_nine_and_spare():
     game.roll(9)
     game.roll(1)
     game.roll(3)
-    roll_many(game, 0, 16)
+    roll_many(game, 0, 17)
     assert game.score() == 16
 
 
@@ -103,3 +103,4 @@ def test_strike_in_ninth_chains_into_tenth_frame_spare():
     game.roll(5)
     game.roll(3)
     assert game.score() == 33
+
